@@ -4,7 +4,8 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@tanstack/eslint-plugin-query/recommended",
-    "prettier"
+    "prettier",
+    "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "mui-unused-classes"],
