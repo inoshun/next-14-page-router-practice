@@ -15,7 +15,7 @@ import GeneralChild from '@/components/GeneralChild'
 
 export default function RenderOrder() {
   return (
-    <div>
+    <>
       <GeneralWrapper uniqueId='1'>
         <GeneralWrapper uniqueId='2'>
           <GeneralChild uniqueId='c' />
@@ -28,6 +28,6 @@ export default function RenderOrder() {
       <GeneralWrapper uniqueId='4'>
         <GeneralChild uniqueId='b' />
       </GeneralWrapper>
-    </div>
+    </>
   )
 }

@@ -13,11 +13,7 @@ export default function Home() {
       <Head>
         <title>Counter</title>
       </Head>
-      <main
-        style={{
-          padding: '50px',
-        }}
-      >
+      <>
         <button
           type='button'
           onClick={() => setWithTitle((prevState) => !prevState)}
@@ -30,7 +26,7 @@ export default function Home() {
         <CounterWrapper withTitle={withTitle}>
           <Counter />
         </CounterWrapper>
-      </main>
+      </>
     </>
   )
 }

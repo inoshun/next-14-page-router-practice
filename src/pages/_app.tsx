@@ -6,6 +6,7 @@ import type { AppProps } from 'next/app'
 import { AppCacheProvider } from '@mui/material-nextjs/v13-pagesRouter'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import { Roboto } from 'next/font/google'
+import Layout from '@/components/Layout'
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -25,7 +26,9 @@ export default function App(props: AppProps) {
   return (
     <AppCacheProvider {...props}>
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </AppCacheProvider>
   )
