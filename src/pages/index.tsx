@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Typography from '@mui/material/Typography'
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <h2>Top page</h2>
+      <Typography variant='h2'>Next14 Page Router Demo</Typography>
     </>
   )
 }
