@@ -17,6 +17,11 @@ type Props = {
 export default function NavigationDrawer({ drawerOpen, closeDrawer }: Props) {
   const navigationItems = [
     {
+      label: 'Multiple Counters with Jotai',
+      href: '/multiple-counters-jotai',
+      icon: <CalculateIcon />,
+    },
+    {
       label: 'Counter',
       href: '/counter',
       icon: <CalculateIcon />,
@@ -27,9 +32,10 @@ export default function NavigationDrawer({ drawerOpen, closeDrawer }: Props) {
       icon: <DvrIcon />,
     },
   ]
+
   return (
     <Drawer anchor='left' open={drawerOpen} onClose={closeDrawer}>
-      <Box sx={{ width: 250 }} component='nav'>
+      <Box sx={{ width: 350 }} component='nav'>
         <List subheader={<ListSubheader component='div'>MENU</ListSubheader>}>
           {navigationItems.map((navigationItem) => {
             return (
